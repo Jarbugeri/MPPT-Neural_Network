@@ -31,18 +31,16 @@ If you installed through Anaconda, activate your Anaconda environment.
 
 Invoke python from your shell as follows:
 
-$ python
+> python
+
 Enter the following short program inside the python interactive shell:
 
->> import tensorflow as tf
-
->> hello = tf.constant('Hello, TensorFlow!')
-
->> sess = tf.Session()
-
->> print(sess.run(hello))
+> import tensorflow as tf
+> hello = tf.constant('Hello, TensorFlow!')
+> sess = tf.Session()
+> print(sess.run(hello))
 
 If the system outputs the following, then you are ready to begin writing TensorFlow programs:
 
->> Hello, TensorFlow!
+> Hello, TensorFlow!
 
