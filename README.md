@@ -2,16 +2,14 @@
 A mppt neural network project for  Danilo's class
 Este projeto contem um Bando de dado com V,I,Rad,Temp e Duty
 
-Installing with Anaconda
+# Installing TensorFlow with Anaconda #
+
 The Anaconda installation is community supported, not officially supported.
-
 Take the following steps to install TensorFlow in an Anaconda environment:
-
 Follow the instructions on the Anaconda download site to download and install Anaconda.
-
 Create a conda environment named tensorflow by invoking the following command:
 
-C:> conda create -n tensorflow pip python=3.5 
+> C:> conda create -n tensorflow pip python=3.5 
 Activate the conda environment by issuing the following command:
 
 C:> activate tensorflow
