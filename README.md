@@ -48,3 +48,7 @@ If the system outputs the following, then you are ready to begin writing TensorF
 > Hello, TensorFlow!
 
 ImportError: Could not find 'cudart64_90.dll'. TensorFlow requires that this DLL be installed in a directory that is named in your %PATH% environment variable. Download and install CUDA 9.0 from this URL: https://developer.nvidia.com/cuda-toolkit
+
+## Exemplos ##
+
+https://github.com/aymericdamien/TensorFlow-Examples/tree/master/examples
