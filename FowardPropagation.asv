@@ -4,7 +4,9 @@ clc;
 pesos = csvread('pesos.csv');
 bias = csvread('bias.csv');
 x= [1000 25 6.81870091226517 29.7825061861631];
-x_norm = (x - mean(x))/std(x);
+for i=1:4
+    x_norm(i) =(x(i) - mean)/std(x);
+end    
 W1= pesos(:,1:4);
 W2= pesos(:,5:8);
 WO= pesos(:,9);
@@ -15,8 +17,8 @@ duty_esperado=0.485;
 %Entrada
  
 for i=1:4
-    Neu =  dot( x_norm ,W1(1:4,i)  ) ; %Produto interno
-    X1(1,i)  =  tanh( Neu + b1(i,1) )  ;
+    Neu =  dot( x_norm ,W1(1:4,i)) ; %Produto interno
+    X1(1,i)  = tanh( Neu + b1(i,1))   ;
 end
 for i=1:1:4 % 5 to 8
     Neu2 =  dot( X1 , ( W2(1:4,i) ) ) ;
@@ -24,3 +26,5 @@ for i=1:1:4 % 5 to 8
 end
 
 duty = ( dot( X2,(WO) ) + b3 );
+
+Test= x_norm(1)*W1(1,4)+x_norm(2)*W1(2,4)+x_norm(3)*W1(3,4)+x_norm(4)*W1(4,4)
