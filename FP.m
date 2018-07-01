@@ -1,6 +1,4 @@
-clear all;
-clc;
-%X_test=csvread('data.csv');
+function [ D ] = FP(  )
 pesos = csvread('pesos.csv');
 bias = csvread('bias.csv');
 
@@ -31,5 +29,6 @@ for i=1:1:4 % 5 to 8
 end
 
 duty = ( dot( X2,(WO) ) + b3 );
-
+D=duty;
+end
 
